@@ -1,0 +1,11 @@
+brand,model,category,weight,drop,pronation,cushioning,terrain,plate
+Nike,Vaporfly 3,carbon_plate,198,8,neutral,energy_return,road,True
+Adidas,Adizero Adios Pro 3,carbon_plate,210,8,neutral,energy_return,road,True
+Hoka,Clifton 9,daily_trainer,248,5,neutral,max_cushion,road,False
+Brooks,Ghost 15,daily_trainer,278,12,neutral,max_cushion,road,False
+Saucony,Endorphin Speed 3,carbon_plate,229,8,neutral,energy_return,road,True
+Asics,Kayano 30,stability,303,10,stability,max_cushion,road,False
+Nike,Terra Kiger 8,trail,264,4,neutral,minimalist,trail,False
+Salomon,Speedcross 6,trail,298,10,neutral,max_cushion,trail,False
+New Balance,FuelCell Rebel v3,daily_trainer,209,6,neutral,energy_return,road,False
+Altra,Lone Peak 7,trail,278,0,neutral,max_cushion,trail,False
