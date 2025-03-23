@@ -1,21 +1,37 @@
 from django.db import models
 
-class Brand(models.Model):
-    name = models.CharField(max_length=100, unique=True)
+# Shoe Model
+class RunningShoe(models.Model):
+    BRAND_CHOICES = [
+        ('Nike', 'Nike'), ('Adidas', 'Adidas'), ('Brooks', 'Brooks'),
+        ('Saucony', 'Saucony'), ('Hoka', 'Hoka'), ('ON', 'ON')
+    ]
+    STRIDE_CHOICES = [('Forefoot', 'Forefoot'), ('Midfoot', 'Midfoot'), ('Heel', 'Heel')]
+    PRONATION_CHOICES = [('Neutral', 'Neutral'), ('Overpronation', 'Overpronation'), ('Supination', 'Supination')]
+    CUSHION_CHOICES = [('Minimalist', 'Minimalist'), ('Moderate', 'Moderate'), ('Max Cushion', 'Max Cushion')]
+    FOOT_SHAPE_CHOICES = [('Narrow', 'Narrow'), ('Standard', 'Standard'), ('Wide', 'Wide')]
 
-    def __str__(self):
-        return self.name
-
-class Shoe(models.Model):
-    brand = models.ForeignKey(Brand, on_delete=models.CASCADE)
+    brand = models.CharField(max_length=50, choices=BRAND_CHOICES)
     model = models.CharField(max_length=100)
-    category = models.CharField(max_length=50, choices=[('daily_trainer', 'Daily Trainer'), ('race', 'Race'), ('trail', 'Trail'), ('stability', 'Stability')])
-    weight = models.FloatField()  # in grams
-    drop = models.FloatField()  # heel-to-toe drop in mm
-    pronation = models.CharField(max_length=20, choices=[('neutral', 'Neutral'), ('stability', 'Stability')])
-    cushioning = models.CharField(max_length=20, choices=[('minimalist', 'Minimalist'), ('max_cushion', 'Max Cushion'), ('energy_return', 'Energy Return')])
-    terrain = models.CharField(max_length=20, choices=[('road', 'Road'), ('trail', 'Trail')])
-    plate = models.BooleanField(default=False)  # Carbon plate?
+    stride_type = models.CharField(max_length=50, choices=STRIDE_CHOICES)
+    pronation = models.CharField(max_length=50, choices=PRONATION_CHOICES)
+    cushioning = models.CharField(max_length=50, choices=CUSHION_CHOICES)
+    foot_shape = models.CharField(max_length=50, choices=FOOT_SHAPE_CHOICES)
+
+# Question Model
+class Question(models.Model):
+    text = models.CharField(max_length=255)  # The question text
 
     def __str__(self):
-        return f"{self.brand.name} {self.model}"
+        return self.text
+
+# Answer Model
+class Answer(models.Model):
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    text = models.CharField(max_length=255)  # The answer text
+    filter_field = models.CharField(max_length=50)  # The field to filter shoes by (e.g., stride_type, foot_shape)
+    filter_value = models.CharField(max_length=50)  # The value to filter by (e.g., 'Forefoot', 'Narrow')
+
+
+    def __str__(self):
+        return f"{self.text}"

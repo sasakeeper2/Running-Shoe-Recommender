@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ shoe.brand }} - {{ shoe.model }}</title>
+</head>
+<body>
+    <h1>{{ shoe.brand }} - {{ shoe.model }}</h1>
+    <p>Stride Type: {{ shoe.stride_type }}</p>
+    <p>Pronation: {{ shoe.pronation }}</p>
+    <p>Cushioning: {{ shoe.cushioning }}</p>
+    <p>Foot Shape: {{ shoe.foot_shape }}</p>
+    
+    <a href="{% url 'shoe_list' %}">Back to Shoe List</a>
+</body>
+</html>

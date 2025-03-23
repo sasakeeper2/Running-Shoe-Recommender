@@ -1,0 +1,122 @@
+[
+    {
+        "model": "recommender.runningshoe",
+        "pk": 1,
+        "fields": {
+            "brand": "Nike",
+            "model": "Pegasus 40",
+            "stride_type": "Midfoot",
+            "pronation": "Neutral",
+            "cushioning": "Moderate",
+            "foot_shape": "Standard"
+        }
+    },
+    {
+        "model": "recommender.runningshoe",
+        "pk": 2,
+        "fields": {
+            "brand": "Nike",
+            "model": "Vaporfly 3",
+            "stride_type": "Forefoot",
+            "pronation": "Neutral",
+            "cushioning": "Minimalist",
+            "foot_shape": "Narrow"
+        }
+    },
+    {
+        "model": "recommender.runningshoe",
+        "pk": 3,
+        "fields": {
+            "brand": "Adidas",
+            "model": "Adizero Adios Pro 3",
+            "stride_type": "Forefoot",
+            "pronation": "Neutral",
+            "cushioning": "Minimalist",
+            "foot_shape": "Standard"
+        }
+    },
+    {
+        "model": "recommender.runningshoe",
+        "pk": 4,
+        "fields": {
+            "brand": "Brooks",
+            "model": "Ghost 15",
+            "stride_type": "Heel",
+            "pronation": "Neutral",
+            "cushioning": "Max Cushion",
+            "foot_shape": "Wide"
+        }
+    },
+    {
+        "model": "recommender.runningshoe",
+        "pk": 5,
+        "fields": {
+            "brand": "Saucony",
+            "model": "Endorphin Speed 3",
+            "stride_type": "Midfoot",
+            "pronation": "Neutral",
+            "cushioning": "Moderate",
+            "foot_shape": "Standard"
+        }
+    },
+    {
+        "model": "recommender.runningshoe",
+        "pk": 6,
+        "fields": {
+            "brand": "Hoka",
+            "model": "Clifton 9",
+            "stride_type": "Heel",
+            "pronation": "Neutral",
+            "cushioning": "Max Cushion",
+            "foot_shape": "Wide"
+        }
+    },
+    {
+        "model": "recommender.runningshoe",
+        "pk": 7,
+        "fields": {
+            "brand": "ON",
+            "model": "Cloudstratus",
+            "stride_type": "Midfoot",
+            "pronation": "Neutral",
+            "cushioning": "Moderate",
+            "foot_shape": "Standard"
+        }
+    },
+    {
+        "model": "recommender.runningshoe",
+        "pk": 8,
+        "fields": {
+            "brand": "Asics",
+            "model": "Gel-Kayano 30",
+            "stride_type": "Heel",
+            "pronation": "Overpronation",
+            "cushioning": "Max Cushion",
+            "foot_shape": "Standard"
+        }
+    },
+    {
+        "model": "recommender.runningshoe",
+        "pk": 9,
+        "fields": {
+            "brand": "Nike",
+            "model": "ZoomX Invincible 3",
+            "stride_type": "Midfoot",
+            "pronation": "Neutral",
+            "cushioning": "Max Cushion",
+            "foot_shape": "Wide"
+        }
+    },
+    {
+        "model": "recommender.runningshoe",
+        "pk": 10,
+        "fields": {
+            "brand": "Brooks",
+            "model": "Hyperion Tempo",
+            "stride_type": "Forefoot",
+            "pronation": "Neutral",
+            "cushioning": "Minimalist",
+            "foot_shape": "Narrow"
+        }
+    }
+]
